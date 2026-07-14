@@ -243,3 +243,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+// Fix browser back/forward cache issue
+window.addEventListener("pageshow", function (event) {
+    if (event.persisted) {
+        window.location.reload();
+    }
+});
