@@ -243,6 +243,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
-window.addEventListener("pageshow", function () {
-    document.body.style.opacity = "1";
+// Fix browser back/forward cache issue
+window.addEventListener("pageshow", function (event) {
+    if (event.persisted) {
+        window.location.reload();
+    }
+   document.body.style.opacity = "1";
 });
