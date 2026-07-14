@@ -243,3 +243,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+window.addEventListener("pageshow", function () {
+    document.body.style.opacity = "1";
+});
