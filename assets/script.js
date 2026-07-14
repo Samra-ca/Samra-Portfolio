@@ -3,17 +3,24 @@
    ========================================================= */
 document.addEventListener('DOMContentLoaded', () => {
 
-  /* ---------- PRELOADER ---------- */
+/* ---------- PRELOADER ---------- */
 
 const loader = document.getElementById("loader");
 
-if (loader) {
+if(loader){
 
-    // Hide loader when page is completely loaded
-    window.addEventListener("load", () => {
-        requestAnimationFrame(() => {
+    // Show loader immediately
+    loader.classList.remove("hide");
+
+    // Hide after page is fully loaded
+    window.addEventListener("load",()=>{
+
+        setTimeout(()=>{
+
             loader.classList.add("hide");
-        });
+
+        },900);
+
     });
 
 }
@@ -117,9 +124,11 @@ if(loader){
     loader.classList.remove("hide");
 }
 
-setTimeout(() => {
+setTimeout(()=>{
+
     window.location.href = href;
-},350);
+
+},900);
     });
   });
 
