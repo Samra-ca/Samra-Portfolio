@@ -3,27 +3,15 @@
    ========================================================= */
 document.addEventListener('DOMContentLoaded', () => {
 
-/* ---------- PRELOADER ---------- */
-
-const loader = document.getElementById("loader");
-
-if(loader){
-
-    // Show loader immediately
-    loader.classList.remove("hide");
-
-    // Hide after page is fully loaded
-    window.addEventListener("load",()=>{
-
-        setTimeout(()=>{
-
-            loader.classList.add("hide");
-
-        },900);
-
+  /* ---------- PRELOADER ---------- */
+  const loader = document.getElementById('loader');
+  if (loader) {
+    window.addEventListener('load', () => {
+      setTimeout(() => loader.classList.add('hide'), 500);
     });
-
-}
+    // fallback in case 'load' already fired
+    setTimeout(() => loader.classList.add('hide'), 1400);
+  }
 
   /* ---------- CUSTOM CURSOR: bracket + spark trail ---------- */
   const glyph = document.getElementById('cursor-glyph');
@@ -118,17 +106,8 @@ if(loader){
     if (!href || href.startsWith('#') || href.startsWith('http') || href.startsWith('mailto') || href.startsWith('tel') || a.target === '_blank') return;
     a.addEventListener('click', (e) => {
       e.preventDefault();
-      document.body.classList.add("page-exit");
-
-if(loader){
-    loader.classList.remove("hide");
-}
-
-setTimeout(()=>{
-
-    window.location.href = href;
-
-},900);
+      document.body.classList.add('page-exit');
+      setTimeout(() => { window.location.href = href; }, 320);
     });
   });
 
@@ -263,16 +242,4 @@ setTimeout(()=>{
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   }
-});
-// Fix browser back/forward cache issue
-window.addEventListener("pageshow", function () {
-
-    document.body.classList.remove("page-exit");
-
-    const loader = document.getElementById("loader");
-
-    if(loader){
-        loader.classList.add("hide");
-    }
-
 });
