@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Samra Fatima · AI &amp; Full-Stack Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+<div id="loader">
+  <div class="loader-mark">Samra <em>Fatima</em></div>
+  <div class="loader-bar"><div class="loader-fill"></div></div>
+  <div class="loader-status mono">booting portfolio...</div>
+</div>
+<div id="cursor-glyph"></div>
+<canvas id="cursor-trail"></canvas>
+
+<header>
+  <nav class="wrap">
+    <a href="index.html" class="brand">Samra Fatima <span>AI Enthusiast</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a class="nav-cta" href="contact.html">Let's Talk</a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+<div class="nav-overlay" id="nav-overlay"></div>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <canvas id="node-canvas"></canvas>
+
+  <div class="wrap hero-grid">
+
+    <!-- LEFT -->
+    <div>
+      <div class="eyebrow">Attock, Pakistan</div>
+
+      <h1 class="hero-title">
+        <span class="hero-name">Samra Fatima</span><br>
+        <span class="hero-text">
+          builds <em>intelligent</em><br>
+          solutions that matter.
+        </span>
+      </h1>
+
+      <p class="lede">
+        AI undergraduate at COMSATS University Islamabad, building
+        AI-powered applications, full-stack solutions, and machine learning
+        systems from idea to deployment.
+      </p>
+
+      <div class="terminal-line">
+        <span class="prompt">$</span>
+        <span id="typed"></span>
+        <span class="cursor-blink"></span>
+      </div>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="projects.html">View Projects</a>
+        <a class="btn btn-ghost" href="contact.html">Get in Touch</a>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="hero-image">
+      <div class="image-glow"></div>
+    
+      <img src="assets/images/profile.jpeg" alt="Samra Fatima">
+    </div>
+
+  </div>
+
+  <div class="scroll-cue">
+    <span>Scroll</span>
+    <span class="line"></span>
+  </div>
+
+</section>
+
+<!-- ================= TECH MARQUEE ================= -->
+<div class="marquee">
+  <div class="marquee-track mono">
+    <span>Python</span><span>C++</span><span>Java</span><span>JavaScript</span><span>React</span>
+    <span>Node.js</span><span>Flutter</span><span>MongoDB Atlas</span><span>XGBoost</span>
+    <span>scikit-learn</span><span>Vercel</span><span>Render</span><span>Git/GitHub</span>
+    <span>Python</span><span>C++</span><span>Java</span><span>JavaScript</span><span>React</span>
+    <span>Node.js</span><span>Flutter</span><span>MongoDB Atlas</span><span>XGBoost</span>
+    <span>scikit-learn</span><span>Vercel</span><span>Render</span><span>Git/GitHub</span>
+  </div>
+</div>
+
+<!-- ================= STATS BAND ================= -->
+<section>
+  <div class="wrap">
+    <div class="stats-band" data-reveal="1">
+      <div class="sb-item">
+        <div class="sb-num"><span class="accent">AI & ML</span></div>
+        <div class="sb-label">SPECIALIZATION</div>
+      </div>
+      <div class="sb-item">
+        <div class="sb-num">6+</div>
+        <div class="sb-label">Projects Shipped</div>
+      </div>
+      <div class="sb-item">
+        <div class="sb-num">2</div>
+        <div class="sb-label">Internships &amp; Roles</div>
+      </div>
+      <div class="sb-item">
+        <div class="sb-num">24/7</div>
+        <div class="sb-label">LEARNING</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT PREVIEW ================= -->
+<section id="about">
+  <div class="wrap about-grid">
+    <div data-reveal="1">
+      <div class="eyebrow">About</div>
+      <h2 style="font-size:2.2rem; margin-bottom:1.2rem;">Trained on curiosity, deployed on real problems.</h2>
+      <p>I'm an <strong>Artificial Intelligence</strong> undergraduate at <strong>COMSATS University Islamabad, Attock Campus</strong>, currently maintaining a <strong>3.76/4.0</strong> CGPA. My work sits at the intersection of full-stack engineering, Flutter interface design, and applied machine learning.</p>
+      <p>I've built CRM systems with role-based access, designed mobile interfaces for food and student-management apps, and trained classification models on real HR data.</p>
+      <a class="section-link" href="about.html" data-cursor="Read">Read the full story →</a>
+    </div>
+    <div class="about-card" data-reveal="2">
+      <h4>Quick Facts</h4>
+      <ul>
+        <li><span>Location</span><span>Attock, Pakistan</span></li>
+        <li><span>Degree</span><span>BS Artificial Intelligence</span></li>
+        <li><span>Institution</span><span>COMSATS, Attock</span></li>
+        <li><span>CGPA</span><span>3.76 / 4.0</span></li>
+        <li><span>Status</span><span>2024 – Present</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EXPERIENCE PREVIEW (mini timeline) ================= -->
+<section id="experience-preview">
+  <div class="wrap">
+    <div class="section-head" data-reveal="1">
+      <div>
+        <div class="eyebrow">Career Path</div>
+        <h2>A quick look at where I've worked</h2>
+      </div>
+      <a class="section-link" href="experience.html" data-cursor="View">Full timeline →</a>
+    </div>
+    <div class="mini-timeline" data-reveal="2">
+      <div class="mini-t-item">
+        <div class="mt-date mono">2026 — Present</div>
+        <div>
+          <h4>AI/ML Intern</h4>
+          <p>Cooperative Tech Pvt. Ltd. (Onsite) — currently developing AI/ML solutions, including an Employee Attrition
+            Prediction system and an AI-powered Local Business Marketing Agent using modern machine learning techniques.</p>
+        </div>
+      </div>
+      
+      <div class="mini-t-item">
+        <div class="mt-date mono">2026 — Present</div>
+        <div>
+          <h4>Machine Learning Intern</h4>
+          <p>FlyRank AI (Remote) — working on machine learning projects, model development, data preprocessing, and practical
+            AI applications while collaborating in a remote development environment.</p>
+        </div>
+      </div>
+      
+      <div class="mini-t-item">
+        <div class="mt-date mono">2025</div>
+        <div>
+          <h4>Web Development Intern</h4>
+          <p>Marfah Technology — developed responsive websites, landing pages, and frontend interfaces using HTML, CSS,
+            JavaScript, and React while collaborating with the development team on real-world web projects.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SKILLS PREVIEW ================= -->
+<section id="skills-preview">
+  <div class="wrap">
+    <div class="section-head" data-reveal="1">
+      <div>
+        <div class="eyebrow">Toolkit</div>
+        <h2>What I build with</h2>
+      </div>
+      <a class="section-link" href="skills.html" data-cursor="View">All skills →</a>
+    </div>
+    <div class="skills-layout">
+      <div data-reveal="1">
+        <div class="bar-row">
+          <div class="bar-label"><span class="name">MERN Stack Development</span><span class="pct">92%</span></div>
+          <div class="bar-track"><div class="bar-fill" style="--target:92%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span class="name">Flutter UI/UX</span><span class="pct">90%</span></div>
+          <div class="bar-track"><div class="bar-fill" style="--target:90%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label"><span class="name">Python &amp; ML</span><span class="pct">85%</span></div>
+          <div class="bar-track"><div class="bar-fill" style="--target:85%"></div></div>
+        </div>
+      </div>
+      <div data-reveal="2">
+        <div class="skill-block-title">Frequently Reached For</div>
+        <div class="tag-cloud">
+          <span class="tag">Python</span><span class="tag">React</span><span class="tag">Flutter</span>
+          <span class="tag">MongoDB Atlas</span><span class="tag">JWT Auth</span><span class="tag">XGBoost</span>
+          <span class="tag">Git/GitHub</span><span class="tag">REST APIs</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FEATURED PROJECTS PREVIEW ================= -->
+<section id="work">
+  <div class="wrap">
+    <div class="section-head" data-reveal="1">
+      <div>
+        <div class="eyebrow">Selected Work</div>
+        <h2>Featured projects</h2>
+      </div>
+      <a class="section-link" href="projects.html" data-cursor="View">See all projects →</a>
+    </div>
+    <div class="project-grid">
+    
+      <div class="p-card featured" data-reveal="1">
+        <span class="p-featured-tag">Featured</span>
+        <div class="p-index mono">01 / CRM DASHBOARD</div>
+    
+        <h3>CRM Dashboard</h3>
+    
+        <div class="p-stack">
+          <span>MERN</span>
+          <span>JWT</span>
+          <span>MongoDB</span>
+        </div>
+    
+        <p>
+          A full-stack CRM system featuring secure authentication, role-based access,
+          lead management, and RESTful APIs built with the MERN stack.
+        </p>
+      </div>
+    
+      <div class="p-card" data-reveal="2">
+        <div class="p-index mono">02 / SMARTMED-AI</div>
+    
+        <h3>SmartMed-AI</h3>
+    
+        <div class="p-stack">
+          <span>Node.js</span>
+          <span>Firebase</span>
+          <span>AI</span>
+        </div>
+    
+        <p>
+          An AI-powered doctor matching and telehealth platform featuring intelligent
+          symptom analysis, appointment booking, dashboards, and chatbot automation.
+        </p>
+      </div>
+    
+      <div class="p-card" data-reveal="3">
+        <div class="p-index mono">03 / EMPLOYEE ATTRITION PREDICTOR</div>
+    
+        <h3>Employee Attrition Predictor</h3>
+    
+        <div class="p-stack">
+          <span>Python</span>
+          <span>Scikit-learn</span>
+          <span>Streamlit</span>
+        </div>
+    
+        <p>
+          An end-to-end machine learning application that predicts employee attrition
+          using IBM HR Analytics data with an interactive Streamlit dashboard.
+        </p>
+      </div>
+    
+    </div>
+  </div>
+</section>
+
+<!-- ================= CURRENTLY ================= -->
+<section id="currently">
+  <div class="wrap">
+    <div class="section-head" data-reveal="1">
+      <div>
+        <div class="eyebrow">Right Now</div>
+        <h2>What I'm Currently Working On</h2>
+      </div>
+      <div class="sub">
+        My current focus across internships, AI projects, and continuous learning.
+      </div>
+    </div>
+
+    <div class="currently-grid">
+
+      <div class="currently-card" data-reveal="1">
+        <div class="cc-dot"><i></i> Building</div>
+        <h4>AI Local Business Marketing Agent</h4>
+        <p>
+          Developing an AI-powered marketing assistant that automatically generates
+          Facebook posts, Instagram posts, Google Business updates, WhatsApp campaigns,
+          and email marketing content for local businesses.
+        </p>
+      </div>
+
+      <div class="currently-card" data-reveal="2">
+        <div class="cc-dot"><i></i> Working On</div>
+        <h4>AI/ML Internship</h4>
+        <p>
+          Building production-ready AI applications at Cooperative Tech Pvt. Ltd.
+          while working on machine learning, FastAPI, Qdrant, and real-world AI solutions.
+        </p>
+      </div>
+
+      <div class="currently-card" data-reveal="3">
+        <div class="cc-dot"><i></i> Learning</div>
+        <h4>Generative AI & LLMs</h4>
+        <p>
+          Exploring AI Agents, Retrieval-Augmented Generation (RAG), LangChain,
+          MCP, and modern LLM application development through hands-on projects.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT CTA BANNER ================= -->
+<section id="cta">
+  <div class="wrap"
+    style="background:var(--bg-1); border:1px solid var(--line); border-radius:24px; padding:3rem; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1.5rem;"
+    data-reveal="1">
+    <div>
+      <div class="eyebrow">Let's Connect</div>
+      <h2 style="font-size:2rem;">Let's Build Something Amazing Together.</h2>
+      <p style="margin-top:.75rem; color:var(--muted); max-width:600px;">
+        Whether it's an AI solution, a full-stack application, or an exciting collaboration,
+        I'd love to hear your ideas.
+      </p>
+    </div>
+    <a class="btn btn-primary" href="contact.html" data-cursor="Go">
+      Get in Touch
+    </a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-grid">
+    <div class="footnote">© 2026 Samra Fatima — built with intent, not templates. <span class="accent">Attock, Pakistan</span></div>
+    <div class="footer-nav">
+      <a href="about.html">About</a>
+      <a href="experience.html">Experience</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <a href="#" id="to-top" data-cursor="Top">↑</a>
+  </div>
+</footer>
+
+<script src="assets/script.js"></script>
+</body>
+</html>
