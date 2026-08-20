@@ -241,6 +241,23 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  /* ---------- DEEP-LINK TO A SPECIFIC PROJECT (e.g. index -> projects.html#p7) ---------- */
+  const hash = window.location.hash;
+  if (hash && hash.startsWith('#p')) {
+    const target = document.getElementById(hash.slice(1));
+    if (target) {
+      setTimeout(() => {
+        const activeBtn = document.querySelector('.filter-btn.active');
+        if (activeBtn && activeBtn.getAttribute('data-filter') !== 'all') {
+          activeBtn.click();
+        }
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        target.classList.add('highlight');
+        setTimeout(() => target.classList.remove('highlight'), 2000);
+      }, 400);
+    }
+  }
+
   /* ---------- CONTACT FORM (static demo) ---------- */
   const form = document.getElementById('contact-form');
   if (form) {

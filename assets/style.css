@@ -30,7 +30,7 @@
 }
 html{
   scroll-behavior:smooth;
-  overflow-x: hidden;
+  overflow-x: clip;
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
@@ -47,7 +47,7 @@ body{
   font-weight:300;
   line-height:1.7;
   -webkit-font-smoothing:antialiased;
-  overflow-x:hidden;
+  overflow-x: clip;
   opacity:0;
   animation: pageIn .6s var(--ease) .15s forwards;
 }
@@ -170,7 +170,6 @@ nav.wrap{
 .nav-toggle{
   display:none; background:none; border:1px solid var(--line-strong); border-radius:6px;
   width:40px; height:38px; align-items:center; justify-content:center; flex-direction:column; gap:4px;
-  display: none !important;
 }
 .nav-toggle span{ display:block; width:18px; height:2px; background:var(--ink-0); border-radius:2px; transition:transform .3s var(--ease), opacity .2s; }
 .nav-toggle.open span:nth-child(1){ transform:translateY(6px) rotate(45deg); }
@@ -347,8 +346,10 @@ section{ padding:5.5rem 0; }
   background:var(--bg-1); border:1px solid var(--line); border-radius:16px; padding:1.9rem;
   transition:transform .3s var(--ease), border-color .3s; display:flex; flex-direction:column;
 }
+a.p-card{ color:inherit; text-decoration:none; cursor:pointer; }
 .p-card:hover{ transform:translateY(-5px); border-color:var(--line-strong); }
 .p-card.hide{ display:none; }
+.p-card.highlight{ border-color:var(--amber); box-shadow:0 0 0 4px var(--amber-soft); }
 .p-index{ font-family:'IBM Plex Mono', monospace; font-size:0.78rem; color:var(--ink-2); margin-bottom:0.9rem; }
 .p-card h3{ font-size:1.35rem; margin-bottom:0.4rem; }
 .p-stack{ display:flex; flex-wrap:wrap; gap:0.4rem; margin-bottom:0.9rem; }

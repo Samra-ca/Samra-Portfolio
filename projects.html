@@ -41,7 +41,7 @@
 <section class="page-banner">
   <div class="wrap">
     <div class="crumb">Home <span>/</span> Projects</div>
-    <div class="kicker">// Selected Work · 6 Projects</div>
+    <div class="kicker">// Selected Work · 8 Projects</div>
     <h1>Things I've<br>actually <em>shipped</em>.</h1>
     <p>Full-stack engineering, mobile UI design, applied machine learning, and freelance client work.</p>
   </div>
@@ -74,7 +74,7 @@
     </div>
     <div class="project-grid">
 
-      <div class="p-card featured" data-tags="mern" data-reveal="1">
+      <div class="p-card featured" id="p1" data-tags="mern" data-reveal="1">
         <span class="p-featured-tag">Featured</span>
       
         <div class="p-index mono">01 / CRM DASHBOARD</div>
@@ -103,7 +103,7 @@
       
       </div>
 
-      <div class="p-card" data-tags="ml" data-reveal="2">
+      <div class="p-card" id="p2" data-tags="ml" data-reveal="2">
         <div class="p-index mono">02 / EMPLOYEE ATTRITION PREDICTOR</div>
       
         <h3>Employee Attrition Predictor</h3>
@@ -135,7 +135,7 @@
         </div>
       </div>
 
-      <div class="p-card" data-tags="flutter" data-reveal="3">
+      <div class="p-card" id="p3" data-tags="flutter" data-reveal="3">
         <div class="p-index mono">03 / TASTYBOOK</div>
       
         <h3>TastyBook</h3>
@@ -165,7 +165,7 @@
         </div>
       </div>
 
-      <div class="p-card" data-tags="flutter" data-reveal="4">
+      <div class="p-card" id="p4" data-tags="flutter" data-reveal="4">
         <div class="p-index mono">04 / STUDENT MANAGEMENT</div>
       
         <h3>Student Management App</h3>
@@ -196,7 +196,7 @@
         </div>
       </div>
 
-      <div class="p-card" data-tags="mern,ai,healthcare" data-reveal="5">
+      <div class="p-card" id="p5" data-tags="mern,ai,healthcare" data-reveal="5">
         <div class="p-index mono">05 / SMARTMED-AI</div>
       
         <h3>SmartMed-AI</h3>
@@ -232,35 +232,109 @@
         </div>
       </div>
 
-      <div class="p-card" data-tags="ai" data-reveal="6">
+      <div class="p-card" id="p6" data-tags="ai" data-reveal="6">
         <div class="p-index mono">06 / AI MARKETING AGENT</div>
       
         <h3>AI Local Business Marketing Agent</h3>
       
         <div class="p-stack">
+          <span>React</span>
+          <span>Vite</span>
+          <span>Firebase</span>
+          <span>Chart.js</span>
           <span>Python</span>
-          <span>AI</span>
-          <span>LLMs</span>
           <span>FastAPI</span>
-          <span>In Progress</span>
+          <span>Gemini</span>
         </div>
       
         <p>
-          An AI-powered marketing assistant that automatically creates promotional
-          content for local businesses. <strong>(Currently under development)</strong>
+          A full-stack application that helps small businesses create, schedule and
+          track their digital marketing with a single AI assistant.
         </p>
       
         <ul>
-          <li>Generates Facebook posts, Instagram posts, Google Business updates, and WhatsApp campaigns.</li>
-          <li>Creates personalized email marketing campaigns for restaurants, gyms, clinics, and local shops.</li>
-          <li>Designed to help small businesses automate digital marketing with AI.</li>
-          <li><strong>Currently being developed as part of my AI/ML Internship at Cooperative Tech Pvt. Ltd.</strong></li>
+          <li>AI content generation produces captions, emails, WhatsApp messages, and Google posts (live via Gemini, or template-based fallback).</li>
+          <li>Multi-channel publishing across Social (Facebook/Instagram), Email, WhatsApp, and Google Business with live previews.</li>
+          <li>Analytics dashboard with reach, engagement, conversions, trend charts, per-platform breakdowns, and AI recommendations.</li>
+          <li>Campaign history with search, filter, duplicate, and re-run capabilities, plus custom theming and JSON data backup.</li>
         </ul>
       
         <div class="p-links">
-          <span style="opacity:.75;font-style:italic;">
-            🚧 Currently in Progress
-          </span>
+          <a href="https://github.com/Samra-ca/Business-Marketing-Agent" target="_blank" rel="noopener noreferrer">
+            ⌥ Source Code
+          </a>
+        </div>
+      </div>
+
+      <div class="p-card" id="p7" data-tags="mern,ai" data-reveal="7">
+        <div class="p-index mono">07 / CAREERMIND.AI</div>
+      
+        <h3>CareerMind.AI</h3>
+      
+        <div class="p-stack">
+          <span>React</span>
+          <span>Vite</span>
+          <span>FastAPI</span>
+          <span>Python</span>
+          <span>PostgreSQL</span>
+          <span>Gemini</span>
+          <span>Firebase</span>
+        </div>
+      
+        <p>
+          A full-stack career platform combining a React frontend with a FastAPI
+          backend and PostgreSQL database — an AI engine (Gemini with automatic
+          Groq fallback) powers every career feature.
+        </p>
+      
+        <ul>
+          <li>AI skill-gap analysis, personalized career roadmaps, and job recommendations with match scores.</li>
+          <li>Resume upload with ATS analysis, LinkedIn profile auditing, mock interviews, and cover letter generation.</li>
+          <li>Job application pipeline (Kanban), career goals, streaks & achievements, and an analytics dashboard.</li>
+          <li>Multi-session AI career chat with a memory system, plus salary insights and market trends.</li>
+        </ul>
+      
+        <div class="p-links">
+          <a href="https://github.com/Samra-ca/CareerMind-AI" target="_blank" rel="noopener noreferrer">
+            ⌥ Source Code
+          </a>
+        </div>
+      </div>
+
+      <div class="p-card" id="p8" data-tags="ml,ai" data-reveal="8">
+        <div class="p-index mono">08 / PCB DEFECT DETECTION</div>
+      
+        <h3>PCB Defect Detection</h3>
+      
+        <div class="p-stack">
+          <span>Python</span>
+          <span>TensorFlow</span>
+          <span>Keras</span>
+          <span>OpenCV</span>
+          <span>FastAPI</span>
+          <span>PostgreSQL</span>
+          <span>React</span>
+          <span>Tailwind</span>
+        </div>
+      
+        <p>
+          An end-to-end PCB defect inspection system — upload or capture a PCB image
+          and the app aligns the board, classifies defects with a trained CNN (98.2%
+          accuracy), explains the decision with a Grad-CAM heatmap, applies
+          repair-vs-scrap business logic, and surfaces yield analytics.
+        </p>
+      
+        <ul>
+          <li>Classifies 6 defect classes (missing_hole, mouse_bite, open_circuit, short, spur, spurious_copper) with a compact strided-conv CNN.</li>
+          <li>PCB validation gate rejects non-PCB inputs (hands, blank photos) before inference, with ORB-based board alignment.</li>
+          <li>Grad-CAM heatmaps explain each prediction, and repair-cost business logic decides OK / REPAIRABLE / SCRAP.</li>
+          <li>Batch inspection via ZIP upload, every inspection stored in PostgreSQL (Alembic-managed), and a yield analytics dashboard.</li>
+        </ul>
+      
+        <div class="p-links">
+          <a href="https://github.com/Samra-ca/PCB-Defect-Detection-System" target="_blank" rel="noopener noreferrer">
+            ⌥ Source Code
+          </a>
         </div>
       </div>
 
